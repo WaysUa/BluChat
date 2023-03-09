@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "BluetoothChatWay"
 include ':app'
 include ':core'
+include ':chats'
