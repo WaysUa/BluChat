@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/chatsFragment"
-        android:name="com.main.chats.presentation.ui.BooksFragment"
+        android:name="com.main.chats.presentation.ui.ChatsFragment"
         android:label="ChatsFragment">
 
         <deepLink app:uri="bluetoothChatWay://chats" />
