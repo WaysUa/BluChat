@@ -4,6 +4,6 @@ import androidx.core.net.toUri
 
 
 object DeepLinks {
-    val BOOK_READING_DEEP_LINK = "bookReader://reading".toUri()
-    val BOOKS_DEEP_LINK = "bookReader://books".toUri()
+    val CHATS_DEEP_LINK = "bluetoothChat//chats".toUri()
+    val CONNECT_DEVICES_DEEP_LINK = "bluetoothChat//connect_devices".toUri()
 }

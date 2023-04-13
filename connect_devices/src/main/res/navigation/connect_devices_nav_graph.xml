@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/connectDevicesNavGraph"
+    app:startDestination="@id/connectDevicesFragment">
+
+    <fragment
+        android:id="@+id/connectDevicesFragment"
+        android:name="com.main.connection_devices.presentation.ui.ConnectDevicesFragment"
+        android:label="ConnectDevicesFragment">
+
+        <deepLink app:uri="bluetoothChatWay://connect_devices" />
+    </fragment>
+</navigation>
