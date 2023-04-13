@@ -16,3 +16,4 @@ rootProject.name = "BluetoothChatWay"
 include ':app'
 include ':core'
 include ':chats'
+include ':connect_devices'
