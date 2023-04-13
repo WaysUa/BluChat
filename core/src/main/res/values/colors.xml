@@ -8,5 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="cream">#CF9494</color>
+    <color name="midnight_blue">#16232E</color>
+    <color name="teal">#164C45</color>
+    <color name="dark_goldenrod">#CC8D1A</color>
+    <color name="golden_yellow">#E3C75F</color>
+    <color name="olive">#BDA523</color>
 </resources>
