@@ -3,6 +3,8 @@ package com.main.bluchat.main.sl
 import androidx.lifecycle.ViewModel
 import com.main.bluchat.core.sl.Core
 import com.main.bluchat.core.sl.Module
+import com.main.bluchat.features.chat.add.presentation.viewmodel.AddChatViewModel
+import com.main.bluchat.features.chat.add.sl.AddChatModule
 import com.main.bluchat.features.chats.presentation.viewmodel.ChatsViewModel
 import com.main.bluchat.features.chats.sl.ChatsModule
 import com.main.bluchat.main.presentation.MainViewModel
@@ -25,6 +27,7 @@ interface DependencyContainer {
         override fun <T : ViewModel> module(clazz: Class<T>): Module<*> = when (clazz) {
             MainViewModel::class.java -> MainModule(core)
             ChatsViewModel::class.java -> ChatsModule(core)
+            AddChatViewModel::class.java -> AddChatModule()
             else -> dependencyContainer.module(clazz)
         }
     }
