@@ -1,4 +1,4 @@
-package com.main.bluchat.main.presentation
+package com.main.bluchat.main.presentation.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelStoreOwner
 import com.main.bluchat.R
 import com.main.bluchat.core.sl.ProvideViewModel
+import com.main.bluchat.main.presentation.viewmodel.MainViewModel
 
 class MainActivity : AppCompatActivity(), ProvideViewModel {
 

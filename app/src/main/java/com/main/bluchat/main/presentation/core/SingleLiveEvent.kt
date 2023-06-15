@@ -1,4 +1,4 @@
-package com.main.bluchat.main.presentation
+package com.main.bluchat.main.presentation.core
 
 import androidx.annotation.MainThread
 import androidx.lifecycle.LifecycleOwner

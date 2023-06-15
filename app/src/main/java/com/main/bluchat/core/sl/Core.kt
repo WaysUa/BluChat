@@ -1,7 +1,7 @@
 package com.main.bluchat.core.sl
 
-import com.main.bluchat.main.presentation.DispatchersList
-import com.main.bluchat.main.presentation.NavigationCommunication
+import com.main.bluchat.main.presentation.core.DispatchersList
+import com.main.bluchat.main.presentation.communication.NavigationCommunication
 
 interface Core : ProvideNavigation {
 

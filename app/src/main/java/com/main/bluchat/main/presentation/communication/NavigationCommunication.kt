@@ -1,4 +1,7 @@
-package com.main.bluchat.main.presentation
+package com.main.bluchat.main.presentation.communication
+
+import com.main.bluchat.main.presentation.core.NavigationStrategy
+import com.main.bluchat.main.presentation.core.Communication
 
 interface NavigationCommunication {
 

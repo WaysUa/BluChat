@@ -7,7 +7,7 @@ import com.main.bluchat.features.chat.add.presentation.viewmodel.AddChatViewMode
 import com.main.bluchat.features.chat.add.sl.AddChatModule
 import com.main.bluchat.features.chats.presentation.viewmodel.ChatsViewModel
 import com.main.bluchat.features.chats.sl.ChatsModule
-import com.main.bluchat.main.presentation.MainViewModel
+import com.main.bluchat.main.presentation.viewmodel.MainViewModel
 
 interface DependencyContainer {
 
@@ -27,7 +27,7 @@ interface DependencyContainer {
         override fun <T : ViewModel> module(clazz: Class<T>): Module<*> = when (clazz) {
             MainViewModel::class.java -> MainModule(core)
             ChatsViewModel::class.java -> ChatsModule(core)
-            AddChatViewModel::class.java -> AddChatModule()
+            AddChatViewModel::class.java -> AddChatModule(core)
             else -> dependencyContainer.module(clazz)
         }
     }

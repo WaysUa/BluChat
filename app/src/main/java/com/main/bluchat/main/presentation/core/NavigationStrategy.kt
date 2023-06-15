@@ -1,4 +1,4 @@
-package com.main.bluchat.main.presentation
+package com.main.bluchat.main.presentation.core
 
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
@@ -12,7 +12,7 @@ interface NavigationStrategy {
 
         override fun navigate(
             supportFragmentManager: FragmentManager,
-            containerId: Int
+            containerId: Int,
         ) {
             supportFragmentManager.beginTransaction()
                 .executeTransaction(containerId)
@@ -20,21 +20,29 @@ interface NavigationStrategy {
         }
 
         protected abstract fun FragmentTransaction.executeTransaction(
-            containerId: Int
+            containerId: Int,
         ): FragmentTransaction
     }
 
     data class Replace(override val screen: Screen) : Abstract(screen) {
 
-        override fun FragmentTransaction.executeTransaction(containerId: Int) =
-            replace(containerId, screen.fragment().newInstance())
+        override fun FragmentTransaction.executeTransaction(containerId: Int): FragmentTransaction {
+            return replace(containerId, screen.fragment().newInstance())
+        }
     }
 
     data class Add(override val screen: Screen) : Abstract(screen) {
 
-        override fun FragmentTransaction.executeTransaction(containerId: Int) =
-            screen.fragment().let {
+        override fun FragmentTransaction.executeTransaction(containerId: Int): FragmentTransaction {
+            return screen.fragment().let {
                 add(containerId, it.newInstance()).addToBackStack(it.simpleName)
             }
+        }
+    }
+
+    class Back : NavigationStrategy {
+        override fun navigate(supportFragmentManager: FragmentManager, containerId: Int) {
+            supportFragmentManager.popBackStack()
+        }
     }
 }

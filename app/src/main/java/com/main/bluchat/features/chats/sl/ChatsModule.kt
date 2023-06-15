@@ -6,6 +6,8 @@ import com.main.bluchat.features.chats.presentation.viewmodel.ChatsViewModel
 
 class ChatsModule(private val core: Core): Module<ChatsViewModel> {
     override fun viewModel(): ChatsViewModel {
-        return ChatsViewModel(core.provideNavigation())
+        return ChatsViewModel(
+            navigationCommunication = core.provideNavigation()
+        )
     }
 }

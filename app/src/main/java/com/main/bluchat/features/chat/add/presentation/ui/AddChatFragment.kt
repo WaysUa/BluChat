@@ -13,5 +13,8 @@ class AddChatFragment : BaseFragment<AddChatViewModel>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.addChatToolbar.setNavigationOnClickListener {
+            viewModel.navigateToChatsFragment()
+        }
     }
 }
