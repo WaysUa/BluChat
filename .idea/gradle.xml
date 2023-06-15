@@ -12,9 +12,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/chats" />
-            <option value="$PROJECT_DIR$/connect_devices" />
-            <option value="$PROJECT_DIR$/core" />
           </set>
         </option>
       </GradleProjectSettings>

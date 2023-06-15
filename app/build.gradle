@@ -58,8 +58,4 @@ dependencies {
     implementation 'com.google.dagger:dagger:2.44.2'
     kapt 'com.google.dagger:dagger-compiler:2.44.2'
     implementation 'javax.inject:javax.inject:1'
-    //Modules
-    implementation project(path: ':core')
-    implementation project(path: ':chats')
-    implementation project(path: ':connect_devices')
 }
