@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.BluetoothChatWay"
+    android:theme="@style/Theme.BluChat"
     tools:context="com.main.bluetoothchatway.features.chats.presentation.ui.ChatsFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
